@@ -15,7 +15,7 @@ public class ExampleTest {
         int[] avengers = {1,4,41,12,122,44,9,43};
         int thanos = 34;
         temp.GreaterThanY(avengers, thanos);
-
-
+        int[] createdArr = {3,5,1,2,7,9,8,13,25,32};
+        temp.dumbList(createdArr);
     }
 }
