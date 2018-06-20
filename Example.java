@@ -1,3 +1,5 @@
+import java.util.*;
+
 public class Example {
     public void print1to255(){
         System.out.println("hi");
@@ -23,7 +25,48 @@ public class Example {
             System.out.println(X[i]);
         }
     }
+    public int findMax(int[] R){
+        int max = R[0];
+        for (int i = 1; i < R.length; i++){
+            if (R[i] > max){
+                max = R[i];
+            }
+        }
+        System.out.println(max);
+        return max;
+    }
+    public int findAvg(int[] R){
+        int sum = R[0];
+        for (int i = 1; i < R.length; i++){
+            sum += R[i];
+        }
+        int avg = (sum/R.length);
+        System.out.println(avg);
+        return avg;
+    }
 
+    public List<Integer> arrayOdds(){
+        List<Integer> list = new ArrayList<Integer>();
+        for (Integer i = 1; i <= 255; i+=2){
+            list.add(i);
+        }
+        System.out.println(list);
+        return list;
+    }
+
+    public int GreaterThanY(int[] L, int Y){
+        int count = 0;
+        for (int i = 0; i < L.length; i++){
+            if (Y < L[i]){
+                count++;
+            }
+        }   
+        System.out.println(count);
+        return count;
+    }
+
+//     Greater Than Y
+// Write a method that takes an array and returns the number of values in that array whose value is greater than a given value y. For example, if array = [1, 3, 5, 7] and y = 3, after your method is run it will print 2 (since there are two values in the array that are greater than 3).
 
     // Iterating through an array
     // Given an array X, say [1,3,5,7,9,13], write a method that would iterate through each member of the array and print each value on the screen. Being able to loop through each member of the array is extremely important.
