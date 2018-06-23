@@ -16,6 +16,13 @@ public class ExampleTest {
         int thanos = 34;
         temp.GreaterThanY(avengers, thanos);
         int[] createdArr = {3,5,1,2,7,9,8,13,25,32};
-        temp.dumbList(createdArr);
+        // temp.dumbList(createdArr);
+        String[] people = {"Nancy", "Jinichi", "Fujibayashi", "Momochi", "Ishikawa"};
+        // temp.shuffle(people);
+        temp.randomNumber();
+        temp.QbRatio(488,160);
+        temp.printDecimal();
+
+        temp.shuffler(avengers);
     }
 }

@@ -1,3 +1,4 @@
+// I still don't get how to shuffle an array in Java
 import java.util.*;
 
 public class Example {
@@ -64,29 +65,53 @@ public class Example {
         System.out.println(count);
         return count;
     }
-    public List<Integer> dumbList(int[] duh){
-        List<Integer> list = new ArrayList<Integer>();
-        for (Integer i = 1; i < duh.length; i++){
-            if (duh[i] >10 ){
-                list.add(duh[i]);
-            }
-        }
-        System.out.println(list);
-        return list;
+
+    public int randomNumber(){
+        double num;
+        num = Math.floor(Math.random()*10);
+        int num2 = (int) num;
+        System.out.println(num2);
+        return num2;
+    }
+
+    public double QbRatio(int tds, int picks){
+        double brady = tds/picks;
+        double crazy;
+        System.out.println(brady);
+        System.out.format("%.2f", brady);
+        System.out.println("x");
+        crazy = 3/2;
+        System.out.println(crazy);
+        return brady;
     }
 
 
+    public double printDecimal(){
+        double cray = 3/2;
+        System.out.println(3.2);
+        System.out.println(cray);
+        return 3.5;
+    }
 
-
-    // public int[] sum(int arr[]){
-    //     int[] newArr = {};
-    //     for (int i = 0; i < arr.length; i++){
-    //         System.out.println(arr[i]);
-    //         if (arr[i] >= 10){
-    //             newArr[i] = i;
+    public List<Integer> shuffler(int[] shuff){
+        ArrayList<Integer> newarr = new ArrayList<Integer>();
+        for (int i = 0; i < shuff.length; i++){
+            newarr.add(shuff[i]);
+        }
+        System.out.println("Hi the new array is" + newarr);
+        Collections.shuffle(newarr);
+        System.out.println(newarr);
+        return newarr;
+    }
+    
+    // public List<Integer> dumbList(int[] duh){
+    //     List<Integer> list = new ArrayList<Integer>();
+    //     for (Integer i = 1; i < duh.length; i++){
+    //         if (duh[i] >10 ){
+    //             list.add(duh[i]);
     //         }
     //     }
-    //     return newArr;
+    //     System.out.println(list);
+    //     return list;
     // }
 }
-// ● Create an array with the following values: 3,5,1,2,7,9,8,13,25,32. Print the sum of all numbers in the array. Also have the function return an array that only includes numbers that are greater than 10 (e.g. when you pass the array above, it should return an array with the values of 13,25,32)
