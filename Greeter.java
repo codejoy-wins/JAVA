@@ -11,4 +11,7 @@ public class Greeter {
     private String createGreeting(String toBeGreeted){
         return "Greetings, " + toBeGreeted + ", welcome to life.";
     }
+    public static void testGreeting(String name){
+        System.out.println("This is a test of a static method, " + name);
+    }
 }

@@ -1,12 +1,13 @@
 public class GreeterTest {
     public static void main(String[] args){
-        Greeter g = new Greeter();
+        Greeter.testGreeting("Kyle");
+        // Greeter g = new Greeter();
 
-        String greeting = g.greet();
-        String greetingWithName = g.greet("Max", "Jann");
-        System.out.println(greeting);
+        // String greeting = g.greet();
+        // String greetingWithName = g.greet("Max", "Jann");
+        // System.out.println(greeting);
 
-        System.out.println(greetingWithName);
+        // System.out.println(greetingWithName);
 
         // if (greeting.equals("Hello World") || greetingWithName.equals("Hello Eduardo")){
         //     System.out.println("Test successful");
